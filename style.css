@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    /* ### Primary */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    /* ### Neutral */
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-b-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-b-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Plus Jakarta Sans',
+        sans-serif;
+    background-color: var(--light-grayish-blue-2);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+
+/* Headlines */
+main {
+    height: 100%;
+    background-color: var(--white);
+    min-width: 375px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+main .headlines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+main .headlines .noti-num {
+    display: flex;
+    align-items: center;
+}
+
+main .headlines .noti-num p {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 32px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 3px 3px;
+}
+
+main .headlines .noti-num h2 {
+    color: var(--very-dark-blue);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+main .headlines a {
+    color: var(--dark-grayish-b-blue);
+    font-size: 16px;
+}
+
+/* Notifications */
+
+main .notification {
+    display: flex;
+    padding: 20px 15px;
+    justify-content: flex-start;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+main .notification img {
+    width: 40px;
+    height: 40px;
+    min-width: 50px;
+
+}
+
+main .notification .avatar {
+    flex-basis: auto;
+}
+
+main .notification .notif-text {
+    flex-basis: 80%;
+    padding: 0 15px;
+    color: var(--dark-grayish-b-blue);
+}
+
+main .notification .post-img {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: space-between;
+
+}
+
+main .notification .notif-text .name {
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+
+main .notification .notif-text .location {
+    font-weight: 800;
+    color: var(--blue);
+}
+
+main .notification .notif-text .message {
+    border: 1px solid var(--grayish-blue);
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+
+
+main .unread {
+    background-color: var(--very-light-grayish-b-blue);
+
+}
+
+main .unread .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin: auto 0;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+@media (min-width: 868px) {}
