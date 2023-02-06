@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 
 }
@@ -79,6 +79,11 @@ main .headlines .noti-num h2 {
 main .headlines a {
     color: var(--dark-grayish-b-blue);
     font-size: 16px;
+    transition: color .2s ease-in;
+}
+
+main .headlines a:hover {
+    color: var(--blue);
 }
 
 /* Notifications */
@@ -131,9 +136,14 @@ main .notification .notif-text .message {
     border-radius: 4px;
     padding: 15px;
     margin-top: 15px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
-
+main .notification .notif-text .message:hover {
+    background-color: var(--light-grayish-blue-1);
+    border: 1px solid transparent;
+}
 
 main .unread {
     background-color: var(--very-light-grayish-b-blue);
@@ -150,4 +160,8 @@ main .unread .circle {
     display: inline-block;
 }
 
-@media (min-width: 868px) {}
+@media (min-width: 868px) {
+    main .notification {
+        font-size: 16px;
+    }
+}
