@@ -70,7 +70,7 @@ main .headlines .noti-num p {
     padding: 3px 3px;
 }
 
-main .headlines .noti-num h2 {
+main .headlines .noti-num h1 {
     color: var(--very-dark-blue);
     margin-right: 10px;
     font-size: 20px;
